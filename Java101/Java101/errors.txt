@@ -1,0 +1,31 @@
+Make the 'S' in System.out.println lowercase instead of uppercase
+	"Package system does not exist" 
+
+	This I believe is one of the most important aspect. It needs the S capital to either write or compile correctly?"
+
+
+Remove the closing parenthesis ')' on the println line
+	"PrintLN error ")" expected 
+	This one isn't too bad as the parenthesis just freaks out the quote only	
+
+Take off the word "static" on the "public static void main
+	"Class Quote is public, should be declared in a file named Quote.java"   1 error
+	This one is interesting. Is it public in the sense that the file can now be anything as in "not static" and the computer needs it to be declared the correct file type?
+
+Remove the quotation marks around the text you want to print out
+	 3 errors
+	"illegal start of expression" ";expected" " ) expected"
+	Again not too bad, just freaks out the computer because it expects a string inside the parentheses but a lot can go wrong without the string as the quote can now become capital letters, functions, etc
+
+
+Remove the closing curly brace, }, at the very end of the program
+	1 error
+	"Reached end of file while parsing }"
+	This one was kind of the funny as does the computer without the closed quote not know when to stop? I expected it to just loop forever in an error. Maybe the code was to simple?
+	
+Remove the opening curly brace, {, just after "public class Quote" at the beginning of your  file
+	1 error
+	"{ expected"
+
+Again same as above! Just at the beginning of the function
+

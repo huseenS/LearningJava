@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+C:\Users\Huseen Sufi\.VirtualBox\AppDesign\AppDesign\AppDesignLocal\AppDesign\LearningJava\src\.metadata\.plugins\org.eclipse.jdt.core
+2768476762.index
+745016941.index
+4095561164.index
+759927122.index

@@ -1,0 +1,197 @@
+
+
+
+
+Huseen Sufi
+
+
+1. It is important for most methods to return an output value instead of just printing results to the terminal because, that way larger and larger programs can be built. It would be difficult to have more complex classes if printing was only an option instead of returning values to use in other methods. With returns, things like object-oriented, and recursion are possible!
+
+2. A FOR loop runs code based on a counter, usually i. It needs a start, and an end, as well as an updater, ie(i++ or i+=10) that runs the program a certain way. FOR loops are very useful in finite methods, with finite input parameters. 
+ A WHILE loop is a little different. A while loop only needs one parameter(ie while something is or is not true keep going). WHILE loops are useful and can be simpler to use for things like BOOLEANS, and functions that get a little more complex.
+
+
+3. Static methods do not need objects or intial variables. A static method like "main" can run just run as either returns something simple or relies on other more complex methods. A NON-STATIC method needs an object and intial variables to run. It is mutable and "non static" for lack of a better term because of the object(s).
+
+4. int x = (int)(newX);
+
+5. 	Public class Manager extends Employee {
+
+		Public Manager(_managerInput) {
+	
+		Super(_EmployeeInput, _EmployeSecInput);
+			
+		//code code code :P
+	
+		}
+	}
+
+6. 
+
+	// FORMULA = M^(N) M to the power of n times a star will be printed
+
+
+
+7. Bits stored in int variables: 2^4
+
+	Bits stored in Long variables: 2^8
+
+	//confused about bits vs Bytes
+
+
+8.
+
+	public int CountStudentsAbroad(boolean[] isAbroad) {
+		
+		int sumAbroad = 0;
+
+		for(int i = 0; i < isAbroad.length, i++) {
+
+			if(isAbroad[i] == true) {
+				sumAbroad++;
+			}
+			
+			else { 
+			
+			sumAbroad--;
+
+			}
+
+		}
+		
+		return sumAbraod;
+	}
+			
+
+
+
+9.  Public class AckerMannFunction { 
+
+
+
+	public static long ackerMann(long m, long n) {
+		
+		//base case
+		if( m == 0) {
+			return n + 1;
+		}
+
+		//more complicated
+		else if( m > 0 && n == 0) {
+
+			long ackerM = (m -1);
+			long ackerN = 1;
+			return ackerMann(ackerM, ackerN);
+
+		//worse case possible
+		else {
+			long ackerInsideN = (ackerN - 1);
+			long ackerOutsideM = ackerM;
+
+			long AckerInsideTotal = ackerInsideN + ackerM;
+			return ackerMann(AckerInsideTotal, ackerOutsideM);
+		}
+
+	}
+
+	public Static void Main(String[] Args) {
+
+		Long printAcker = ackerMann(long 5, long 9);
+		System.out.Println("acker = " + " printAcker"); 
+
+	}
+
+ }
+
+
+
+
+
+10. //import file not found exception :P
+	
+
+
+	Class GPSCoordinate {
+		private double lat;
+		private double lon;
+	
+		public GPSCoordinate(double_lat, double_lon) {
+		
+		//code code code :P
+
+
+public static ArrayList<objects< loadCoordinates(String _filename) {
+	try {
+		File inputFile = new File(_filename);
+		Scanner scannerForDays = new Scanner(inputFile);
+
+			//constructing arraylist for gps coordinates from gpscoordinate method 			
+			GPScoordinatesArray = new ArrayList<GPScoordinates objects>();
+
+
+
+		while(ScannerForDays.hasNextLine()) {
+
+			String line = ScannerForDays.nextLine();
+
+		   if(line.Substring(0,9).equals(/t) { //if there is a tab characater then the lat is on one side and the lon is on the other
+				
+			 lat = Double.parseDouble(line.substring(0,9)); //want it to not include the tab
+			 lon = Double.parseDouble(line.substring(9)); //should go to end
+
+
+			
+			GPScoordinatesArray.add(GPSCoordinate(lat, lon)); //add the substringed lat and lon using the gpscoordinate method from before
+
+			returnedArray = new ArrayList<gpscoordinatesArray>();
+
+			returnedArray.add(GPScoordinatesArray); //declaring this array to lazily type return "returnedArray" instead of return gpscoordinatesArray.add(blah blah blah)
+				//probably not possible 
+
+		    }//end if
+	
+		}// end while
+
+	} //end try
+	Catch(FileNotFoundException e) {
+		System.out.Println("crap some things wrong...oh look its " + e);
+	
+	} // end catch
+
+		return returnedArray;
+}// end method
+
+
+
+		//in main just call method loadCoordinates inputing the filename of "whatevercoordinates.txt" and hopefully it constructs an array list with gpscoord objects called 
+
+			+returnedArray!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

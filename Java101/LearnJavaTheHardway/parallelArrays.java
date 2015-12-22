@@ -1,0 +1,50 @@
+package JavaLearn;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+
+public class parallelArrays {
+
+	public static void main(String[] args) {
+			studentArrays();
+	}
+	
+	private static void studentArrays() {
+		try(BufferedReader reader = new BufferedReader
+				(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
+			
+			String[] studentNames = {"Michelle", "Ortiz", "luu", "Zimmerman", "Brooks"};
+			double[] studentGrades = {99.99,100.0,21.59,85.9,64.75};
+			int[] studentIDNumbers = {11,22,33,44,55};
+			
+			String names = Arrays.toString(studentNames);
+			String grades = Arrays.toString(studentGrades);
+			String idNumbers = Arrays.toString(studentIDNumbers);
+			System.out.println("Values: \n");
+			System.out.println(names + "\n" + grades + "\n" + idNumbers );
+			
+			System.out.println("/n" + "Enter ID Number to search for:");
+			int iDToSearch = Integer.parseInt(reader.readLine());;
+			searchForStudent(iDToSearch, studentIDNumbers, studentGrades, studentNames);
+		} catch (IOException e) {
+			System.err.println(e);
+		}
+		
+	}
+	private static void searchForStudent(int studentID, int []studentIdNumbers, double[ ]studentGrades, String[]studentNames ) {
+		int slot;
+		for (int i = 0; i < studentIdNumbers.length; i++) {
+			if (studentID == studentIdNumbers[i]) {
+				slot = i;
+				System.out.println("Student found at slot " + i);
+				System.out.println("Name: " + studentNames[slot]);
+				System.out.println("Grades: " + studentGrades[slot]);
+				System.out.println("ID Number: " + studentID);
+			}
+		}
+	}
+}

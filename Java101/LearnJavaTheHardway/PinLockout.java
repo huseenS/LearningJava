@@ -1,0 +1,41 @@
+package JavaLearn;
+
+
+import java.util.Scanner;
+
+public class PinLockout {
+
+	public static void main(String[] args) {
+		
+		Scanner keyBoard = new Scanner(System.in);
+		int pin = 12345;
+		int tries = 0;
+		int maximumTries = 4;
+		
+		System.out.println("Enter your PIN: ");
+		int entry = keyBoard.nextInt();
+		tries++;
+		
+		while ( entry != pin && tries <= maximumTries) {
+			
+			System.out.println("\n INCORRECT PIN. TRY AGAIN. ");
+			System.out.print("Enter your PIN: ");
+			entry = keyBoard.nextInt();
+			tries++;
+		}
+		
+		if ( entry == pin ) {
+			System.out.println("\n PIN ACCEPTED. YOU NOW HAVE ACCESS TO YOUR ACCOUNT.");
+			
+		}
+		
+		else if ( tries >= maximumTries ) {
+			System.out.println("\n YOU HAVE RUN OUT OF TRIES. ACCOUNT LOCKED.");
+		}
+		
+		keyBoard.close();
+	}
+	
+
+
+}
